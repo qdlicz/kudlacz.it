@@ -40,6 +40,7 @@ header {
   text-align: center;
 }
 
+
 .Terminal-wrapper {
   display: flex;
   /* flex: 1; */
@@ -141,6 +142,11 @@ li.fa {
   color: 000;
 }
 
+ .fa-terminal {
+  color: white;
+ }
+
+ 
 /* icons & typography */
 
 header img {
@@ -166,4 +172,43 @@ h2 {
 
 .Terminal a:hover {
   color: #f57453;
+}
+
+
+
+/* buttons */
+
+.button-wrapper
+{
+  display: flex;
+  justify-content: center;
+  margin-top:20px;
+}
+
+.button-terminal {
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #056892 100%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  width: 200px;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-terminal:hover {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+@media (min-width: 768px) {
+  .button-terminal {
+    padding: 1rem 2rem;
+  }
 }
